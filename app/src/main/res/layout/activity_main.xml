@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Start Learning"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@color/white"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Numbers"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:onClick="numbers"
+        android:background="@android:color/holo_green_light"
+         />
+
+    <TextView
+        android:id="@+id/familymembers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Family Members"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="family"
+        />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Colors"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_purple"
+        android:onClick="colors"
+        />
+
+    <TextView
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Phrases"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="phrases"
+        />
+
+</LinearLayout>
