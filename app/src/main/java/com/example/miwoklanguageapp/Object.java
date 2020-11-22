@@ -7,17 +7,24 @@ public class Object {
     private int mIcon = NO_IMAGE_PROVIDER;
     private String mDefaultTranslation;
     private String mMiwokTranslation;
+    private int mAudiofile;
 
 
 
-    public Object(String defaultTranslation, String miwokTranslation) {
+
+    public Object(String defaultTranslation, String miwokTranslation , int audiofile) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudiofile = audiofile;
     }
-    public Object(String mDefaultTranslation, String mMiwokTranslation,int mIcon) {
+
+
+
+    public Object(String mDefaultTranslation, String mMiwokTranslation, int mIcon, int audiofile) {
         this.mIcon = mIcon;
         this.mDefaultTranslation = mDefaultTranslation;
         this.mMiwokTranslation = mMiwokTranslation;
+        mAudiofile = audiofile;
     }
     public boolean hasImage(){
         return mIcon != NO_IMAGE_PROVIDER;
@@ -31,4 +38,5 @@ public class Object {
         return mMiwokTranslation;
     }
     public int getmIcon() { return mIcon; }
+    public int getmAudiofile() { return mAudiofile; }
 }

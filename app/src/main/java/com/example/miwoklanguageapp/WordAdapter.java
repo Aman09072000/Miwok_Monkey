@@ -42,6 +42,7 @@ public class WordAdapter extends ArrayAdapter<Object> {
             icon.setImageResource(currentWord.getmIcon());}
         else
             icon.setVisibility(View.GONE);
+//...............................................................................
 
         View testContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceId);
